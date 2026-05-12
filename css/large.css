@@ -1,0 +1,17 @@
+@media (min-width: 768px) {
+
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    gap: 15px;
+    background: transparent;
+  }
+
+  nav a {
+    color: white;
+  }
+
+  #menu {
+    display: none;
+  }
+}
