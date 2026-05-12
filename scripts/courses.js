@@ -8,13 +8,15 @@ const courses = [
 const list = document.getElementById("course-list");
 const creditsEl = document.getElementById("credits");
 
-function displayCourses(filtered) {
+// DISPLAY COURSES
+function displayCourses(filteredCourses) {
   list.innerHTML = "";
 
-  filtered.forEach(course => {
+  filteredCourses.forEach(course => {
     const div = document.createElement("div");
     div.textContent = course.code;
 
+    // highlight completed courses
     if (course.completed) {
       div.style.background = "#b6fcb6";
       div.style.border = "2px solid green";
@@ -23,15 +25,31 @@ function displayCourses(filtered) {
     list.appendChild(div);
   });
 
-  const total = filtered.reduce((sum, c) => sum + c.credits, 0);
-  creditsEl.textContent = total;
+  // reduce function (TOTAL CREDITS)
+  const totalCredits = filteredCourses.reduce((sum, course) => {
+    return sum + course.credits;
+  }, 0);
+
+  creditsEl.textContent = totalCredits;
 }
 
+// FILTER FUNCTION
 function filterCourses(type) {
-  if (type === "all") return displayCourses(courses);
+  if (type === "all") {
+    displayCourses(courses);
+    return;
+  }
 
-  const filtered = courses.filter(c => c.category === type);
+  const filtered = courses.filter(course => course.category === type);
   displayCourses(filtered);
 }
 
+// INITIAL LOAD
 displayCourses(courses);
+
+// EVENT LISTENERS (THIS FIXES YOUR onclick ISSUE)
+document.querySelectorAll("button[data-filter]").forEach(button => {
+  button.addEventListener("click", () => {
+    filterCourses(button.dataset.filter);
+  });
+});
