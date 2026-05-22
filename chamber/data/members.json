@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Lagos Tech Hub",
+    "address": "Ikeja, Lagos",
+    "phone": "+234 800 111 2222",
+    "website": "https://example.com",
+    "image": "tech.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Blue Ocean Foods",
+    "address": "Victoria Island, Lagos",
+    "phone": "+234 801 222 3333",
+    "website": "https://example.com",
+    "image": "food.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Bright Bank",
+    "address": "Lekki, Lagos",
+    "phone": "+234 802 333 4444",
+    "website": "https://example.com",
+    "image": "bank.jpg",
+    "membership": 1
+  },
+  {
+    "name": "Lekki Mall Stores",
+    "address": "Lekki Phase 1, Lagos",
+    "phone": "+234 803 444 5555",
+    "website": "https://example.com",
+    "image": "shop.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Ocean View Hotel",
+    "address": "Victoria Island, Lagos",
+    "phone": "+234 804 555 6666",
+    "website": "https://example.com",
+    "image": "hotel.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Taste Buds Restaurant",
+    "address": "Surulere, Lagos",
+    "phone": "+234 805 666 7777",
+    "website": "https://example.com",
+    "image": "food.jpg",
+    "membership": 1
+  },
+  {
+    "name": "Lagos Startup Hub",
+    "address": "Yaba, Lagos",
+    "phone": "+234 806 777 8888",
+    "website": "https://example.com",
+    "image": "startup.jpg",
+    "membership": 3
+  }
+]

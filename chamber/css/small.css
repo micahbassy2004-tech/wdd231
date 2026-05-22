@@ -1,0 +1,14 @@
+#members.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+#members.list .card {
+  display: block;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
