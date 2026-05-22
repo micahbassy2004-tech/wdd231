@@ -1,14 +1,28 @@
-#members.grid {
-  display: grid;
-  grid-template-columns: 1fr;
+#members {
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
-#members.list .card {
-  display: block;
+/* GRID VIEW */
+#members.grid .card {
+  flex: 1 1 250px;
 }
 
+/* LIST VIEW */
+#members.list {
+  flex-direction: column;
+}
+
+/* LIST CARDS */
+#members.list .card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* CARD STYLE */
 .card {
   border: 1px solid #ccc;
   padding: 10px;
+  background: white;
 }
