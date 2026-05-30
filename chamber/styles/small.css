@@ -72,7 +72,7 @@ textarea {
   border-radius: 5px;
 }
 
-/* SUBMIT BUTTON */
+/* SUBMIT */
 input[type="submit"] {
   background: #0b3d91;
   color: white;
@@ -81,7 +81,7 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* CARDS (JOIN PAGE FIX) */
+/* CARDS */
 .cards {
   display: grid;
   gap: 1rem;
@@ -109,7 +109,6 @@ input[type="submit"] {
 @media (min-width: 768px) {
   .join-layout {
     grid-template-columns: 2fr 1fr;
-    align-items: start;
   }
 
   form {
