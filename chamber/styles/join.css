@@ -10,7 +10,7 @@ body {
   color: #222;
 }
 
-/* HEADER / NAV */
+/* HEADER */
 header {
   background: #0b3d91;
   padding: 1rem;
@@ -31,13 +31,13 @@ nav a.active {
   text-decoration: underline;
 }
 
-/* PAGE TITLE */
+/* TITLE */
 h1 {
   text-align: center;
   margin: 1.5rem 0;
 }
 
-/* MAIN LAYOUT */
+/* LAYOUT */
 .join-layout {
   display: grid;
   grid-template-columns: 1fr;
@@ -62,13 +62,15 @@ label {
   font-weight: bold;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   padding: 0.6rem;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-/* SUBMIT BUTTON */
+/* SUBMIT */
 input[type="submit"] {
   background: #0b3d91;
   color: white;
@@ -78,13 +80,12 @@ input[type="submit"] {
   font-size: 1rem;
 }
 
-/* CARDS SECTION */
+/* CARDS */
 .cards {
   display: grid;
   gap: 1rem;
 }
 
-/* CARDS */
 .card {
   background: white;
   padding: 1rem;
@@ -92,17 +93,18 @@ input[type="submit"] {
   text-align: center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 
-  /* FIX: ensure visible before animation */
-  opacity: 1;
+  opacity: 0;
   transform: translateY(20px);
   animation: fadeIn 0.8s forwards;
 }
 
-.card:nth-child(2) { animation-delay: 0.2s; }
-.card:nth-child(3) { animation-delay: 0.4s; }
-.card:nth-child(4) { animation-delay: 0.6s; }
+/* animation delays */
+.card:nth-child(1) { animation-delay: 0.2s; }
+.card:nth-child(2) { animation-delay: 0.4s; }
+.card:nth-child(3) { animation-delay: 0.6s; }
+.card:nth-child(4) { animation-delay: 0.8s; }
 
-/* CARD BUTTONS */
+/* buttons */
 .card button {
   margin-top: 0.5rem;
   padding: 0.5rem 1rem;
@@ -113,14 +115,14 @@ input[type="submit"] {
   border-radius: 5px;
 }
 
-/* MODALS */
+/* dialog */
 dialog {
   border: none;
   border-radius: 10px;
   padding: 1.5rem;
 }
 
-/* ANIMATION */
+/* animation */
 @keyframes fadeIn {
   to {
     opacity: 1;
@@ -128,7 +130,7 @@ dialog {
   }
 }
 
-/* DESKTOP LAYOUT */
+/* DESKTOP */
 @media (min-width: 768px) {
   .join-layout {
     grid-template-columns: 2fr 1fr;
