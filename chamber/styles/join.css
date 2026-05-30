@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  color: #222;
+}
+
+/* HEADER / NAV */
+header {
+  background: #0b3d91;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+/* PAGE TITLE */
+h1 {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+/* MAIN LAYOUT */
+.join-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 1rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* FORM */
+form {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  display: grid;
+  gap: 1rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* SUBMIT BUTTON */
+input[type="submit"] {
+  background: #0b3d91;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* CARDS SECTION */
+.cards {
+  display: grid;
+  gap: 1rem;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+  /* FIX: ensure visible before animation */
+  opacity: 1;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s forwards;
+}
+
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.4s; }
+.card:nth-child(4) { animation-delay: 0.6s; }
+
+/* CARD BUTTONS */
+.card button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #0b3d91;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* MODALS */
+dialog {
+  border: none;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* DESKTOP LAYOUT */
+@media (min-width: 768px) {
+  .join-layout {
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+  }
+
+  form {
+    position: sticky;
+    top: 1rem;
+  }
+}
