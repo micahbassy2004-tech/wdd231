@@ -6,6 +6,7 @@
   font-family: Roboto, Arial, sans-serif;
 }
 
+/* BODY */
 body {
   background: #f4f6f8;
   color: #222;
@@ -17,6 +18,7 @@ header {
   padding: 1rem;
 }
 
+/* NAV */
 nav {
   display: flex;
   gap: 1rem;
@@ -33,13 +35,13 @@ nav a.active {
   text-decoration: underline;
 }
 
-/* TITLE */
+/* HEADINGS */
 h1 {
   text-align: center;
   margin: 1.5rem 0;
 }
 
-/* JOIN LAYOUT */
+/* JOIN LAYOUT BASE */
 .join-layout {
   display: grid;
   grid-template-columns: 1fr;
@@ -72,7 +74,6 @@ textarea {
   border-radius: 5px;
 }
 
-/* SUBMIT */
 input[type="submit"] {
   background: #0b3d91;
   color: white;
@@ -81,7 +82,7 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* CARDS */
+/* CARDS (ONLY PLACE WHERE .card EXISTS) */
 .cards {
   display: grid;
   gap: 1rem;
@@ -96,23 +97,9 @@ input[type="submit"] {
 }
 
 .card button {
-  margin-top: 0.5rem;
-  padding: 0.5rem 1rem;
   background: #0b3d91;
   color: white;
   border: none;
-  border-radius: 5px;
+  padding: 0.5rem 1rem;
   cursor: pointer;
-}
-
-/* DESKTOP */
-@media (min-width: 768px) {
-  .join-layout {
-    grid-template-columns: 2fr 1fr;
-  }
-
-  form {
-    position: sticky;
-    top: 1rem;
-  }
 }
