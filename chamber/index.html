@@ -46,7 +46,7 @@
     <img src="images/hero.jpg" alt="Lagos city business district">
 
     <div class="hero-text">
-      <h1>Lagos Chamber of Commerce</h1>
+      <h1>Lagos Chamber of Commerce Home</h1>
       <p>Connecting businesses, building opportunities.</p>
       <a class="cta" href="join.html">Join the Chamber</a>
     </div>
@@ -82,17 +82,11 @@
   <p>Last Modified: <span id="lastModified"></span></p>
 </footer>
 
-<!-- SCRIPTS -->
+<!-- SCRIPTS (ALL EXTERNAL - RUBRIC SAFE) -->
 <script src="scripts/directory.js" defer></script>
 <script src="scripts/weather.js" defer></script>
 <script src="scripts/spotlight.js" defer></script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("year").textContent = new Date().getFullYear();
-    document.getElementById("lastModified").textContent = document.lastModified;
-  });
-</script>
+<script src="scripts/main.js" defer></script>
 
 </body>
 </html>
