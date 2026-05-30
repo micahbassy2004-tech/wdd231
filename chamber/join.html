@@ -12,7 +12,7 @@
   <meta property="og:image" content="https://micahbassy2004-tech.github.io/wdd231/chamber/images/hero.jpg">
   <meta property="og:url" content="https://micahbassy2004-tech.github.io/wdd231/chamber/join.html">
 
-  <title>Join and Lagos Chamber of Commerce Membership</title>
+  <title>Join Lagos Chamber of Commerce Membership</title>
 
   <link rel="icon" href="images/favicon.jpg">
 
@@ -21,8 +21,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/small.css">
-  <link rel="stylesheet" href="styles/large.css">
   <link rel="stylesheet" href="styles/join.css">
+  <link rel="stylesheet" href="styles/large.css">
 
   <script src="scripts/join.js" defer></script>
 </head>
@@ -39,7 +39,6 @@
 
 <main>
 
-  <!-- FIX: Single clear H1 inside main -->
   <h1>Join Lagos Chamber of Commerce Membership</h1>
 
   <div class="join-layout">
@@ -48,39 +47,39 @@
 
       <label>
         First Name
-        <input type="text" name="firstname" autocomplete="given-name" required>
+        <input type="text" name="firstname" title="First Name" autocomplete="given-name" required>
       </label>
 
       <label>
         Last Name
-        <input type="text" name="lastname" autocomplete="family-name" required>
+        <input type="text" name="lastname" title="Last Name" autocomplete="family-name" required>
       </label>
 
       <label>
         Organization Title
-        <input type="text" name="orgtitle" autocomplete="organization-title"
-          pattern="[A-Za-z\s\-]{7,}" required>
+        <input type="text" name="orgtitle" title="Organization Title"
+          autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" required>
       </label>
 
       <label>
         Email
-        <input type="email" name="email" placeholder="example@email.com"
-          autocomplete="email" required>
+        <input type="email" name="email" title="Email Address"
+          placeholder="example@email.com" autocomplete="email" required>
       </label>
 
       <label>
         Mobile Phone
-        <input type="tel" name="phone" autocomplete="tel" required>
+        <input type="tel" name="phone" title="Mobile Phone Number" autocomplete="tel" required>
       </label>
 
       <label>
         Business Name
-        <input type="text" name="business" autocomplete="organization" required>
+        <input type="text" name="business" title="Business Name" autocomplete="organization" required>
       </label>
 
       <label>
         Membership Level
-        <select name="membership" required>
+        <select name="membership" title="Membership Level" required>
           <option value="">Select Level</option>
           <option value="np">NP Membership</option>
           <option value="bronze">Bronze Membership</option>
@@ -91,7 +90,7 @@
 
       <label>
         Business Description
-        <textarea name="description"></textarea>
+        <textarea name="description" title="Business Description"></textarea>
       </label>
 
       <input type="hidden" name="timestamp" id="timestamp">
@@ -128,7 +127,7 @@
 
   </div>
 
-  <!-- dialogs -->
+  <!-- Dialogs -->
   <dialog id="np">
     <h2>NP Membership</h2>
     <p>No membership fee for qualifying nonprofit organizations.</p>
