@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Lagos Chamber of Commerce - Connect with businesses, explore events, weather updates, and member spotlights in Lagos Nigeria.">
+
+  <meta name="description" content="Lagos Chamber of Commerce connects businesses, promotes events, and provides weather updates and member spotlights in Lagos, Nigeria.">
+
   <meta name="author" content="Micah Maurice Bassey">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Lagos Chamber of Commerce Home - Business Networking in Lagos Nigeria">
-  <meta property="og:description" content="Connect with businesses, explore events, and discover growth opportunities with Lagos Chamber of Commerce.">
+  <meta property="og:title" content="Lagos Chamber of Commerce - Business Networking in Lagos">
+  <meta property="og:description" content="Connect with businesses, explore events, and discover opportunities with the Lagos Chamber of Commerce.">
   <meta property="og:image" content="https://micahbassy2004-tech.github.io/wdd231/chamber/images/hero.jpg">
   <meta property="og:url" content="https://micahbassy2004-tech.github.io/wdd231/chamber/index.html">
 
-  <title>Lagos Chamber Home</title>
+  <title>Lagos Chamber of Commerce | Home</title>
 
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.png">
@@ -32,21 +34,21 @@
 
 <header>
   <nav>
-    <a href="index.html">Home</a>
+    <a href="index.html" class="active">Home</a>
     <a href="directory.html">Directory</a>
   </nav>
 </header>
 
 <main>
 
-  <!-- HERO SECTION -->
+  <!-- HERO -->
   <section class="hero">
     <img src="images/hero.jpg" alt="Lagos city business district">
 
     <div class="hero-text">
-      <h1>Welcome to Lagos Chamber of Commerce</h1>
+      <h1>Lagos Chamber of Commerce</h1>
       <p>Connecting businesses, building opportunities.</p>
-      <a class="cta" href="#">Join the Chamber</a>
+      <a class="cta" href="join.html">Join the Chamber</a>
     </div>
   </section>
 
@@ -84,6 +86,13 @@
 <script src="scripts/directory.js" defer></script>
 <script src="scripts/weather.js" defer></script>
 <script src="scripts/spotlight.js" defer></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  });
+</script>
 
 </body>
 </html>

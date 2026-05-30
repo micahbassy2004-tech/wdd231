@@ -1,11 +1,17 @@
 const membersContainer = document.querySelector("#members");
 
+// Load members from JSON
 async function getMembers() {
-  const response = await fetch("data/members.json");
-  const data = await response.json();
-  displayMembers(data);
+  try {
+    const response = await fetch("data/members.json");
+    const data = await response.json();
+    displayMembers(data);
+  } catch (error) {
+    console.error("Error loading members:", error);
+  }
 }
 
+// Display cards
 function displayMembers(members) {
   membersContainer.innerHTML = "";
 
@@ -25,19 +31,24 @@ function displayMembers(members) {
   });
 }
 
-// GRID / LIST TOGGLE
-document.querySelector("#grid").addEventListener("click", () => {
+// Grid / List toggle
+document.getElementById("grid").addEventListener("click", () => {
   membersContainer.classList.add("grid");
   membersContainer.classList.remove("list");
 });
 
-document.querySelector("#list").addEventListener("click", () => {
+document.getElementById("list").addEventListener("click", () => {
   membersContainer.classList.add("list");
   membersContainer.classList.remove("grid");
 });
 
-// FOOTER DATES
-document.querySelector("#year").textContent = new Date().getFullYear();
-document.querySelector("#lastModified").textContent = document.lastModified;
+// Footer
+function updateFooter() {
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("lastModified").textContent = document.lastModified;
+}
 
-getMembers();
+document.addEventListener("DOMContentLoaded", () => {
+  updateFooter();
+  getMembers();
+});

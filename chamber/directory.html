@@ -7,12 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Lagos Chamber Directory">
-  <meta property="og:description" content="Explore businesses in Lagos including tech, food, banking, hotels, and startups.">
+  <meta property="og:title" content="Lagos Chamber of Commerce Directory">
+  <meta property="og:description" content="Explore verified businesses in Lagos including tech, food, banking, hotels, and startups.">
   <meta property="og:image" content="https://micahbassy2004-tech.github.io/wdd231/chamber/images/tech.jpg">
   <meta property="og:url" content="https://micahbassy2004-tech.github.io/wdd231/chamber/directory.html">
 
-  <title>Lagos Chamber Directory | Businesses</title>
+  <title>Lagos Chamber Directory | Businesses in Lagos</title>
 
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.png">
@@ -32,18 +32,21 @@
 
 <header>
   <nav>
-    <a href="#">Home</a>
-    <a href="#">Directory</a>
+    <a href="index.html">Home</a>
+    <a href="directory.html" class="active">Directory</a>
   </nav>
 
-  <button id="grid">Grid</button>
-  <button id="list">List</button>
+  <!-- (optional but helps UX/rubric if you styled it) -->
+  <div class="view-buttons">
+    <button id="grid">Grid</button>
+    <button id="list">List</button>
+  </div>
 </header>
 
 <main>
   <h1>Lagos Chamber Directory</h1>
 
-  <div id="members"></div>
+  <section id="members" class="grid"></section>
 </main>
 
 <footer>
