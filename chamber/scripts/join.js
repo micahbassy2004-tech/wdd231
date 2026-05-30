@@ -1,16 +1,25 @@
-// Set timestamp when page loads
-document.querySelector("#timestamp").value = new Date().toISOString();
+document.addEventListener("DOMContentLoaded", () => {
 
-// Open modals
-document.querySelectorAll("[data-modal]").forEach(button => {
-  button.addEventListener("click", () => {
-    document.getElementById(button.dataset.modal).showModal();
-  });
-});
+  // Set timestamp when page loads
+  const timestamp = document.getElementById("timestamp");
+  if (timestamp) {
+    timestamp.value = new Date().toISOString();
+  }
 
-// Close modals
-document.querySelectorAll("[data-close]").forEach(button => {
-  button.addEventListener("click", () => {
-    document.getElementById(button.dataset.close).close();
+  // Open modals
+  document.querySelectorAll("[data-modal]").forEach(button => {
+    button.addEventListener("click", () => {
+      const modal = document.getElementById(button.dataset.modal);
+      if (modal) modal.showModal();
+    });
   });
+
+  // Close modals
+  document.querySelectorAll("[data-close]").forEach(button => {
+    button.addEventListener("click", () => {
+      const modal = document.getElementById(button.dataset.close);
+      if (modal) modal.close();
+    });
+  });
+
 });

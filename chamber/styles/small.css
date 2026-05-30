@@ -1,21 +1,119 @@
-#members {
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  color: #222;
+}
+
+/* HEADER */
+header {
+  background: #0b3d91;
+  padding: 1rem;
+}
+
+nav {
   display: flex;
+  gap: 1rem;
   flex-wrap: wrap;
-  gap: 10px;
 }
 
-/* GRID VIEW */
-#members.grid .card {
-  flex: 1 1 250px;
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* LIST VIEW */
-#members.list {
-  flex-direction: column;
+nav a.active {
+  text-decoration: underline;
 }
 
-/* LIST CARDS */
-#members.list .card {
+/* TITLE */
+h1 {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+/* JOIN LAYOUT */
+.join-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 1rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* FORM */
+form {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  display: grid;
+  gap: 1rem;
+}
+
+label {
   display: flex;
   flex-direction: column;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* SUBMIT BUTTON */
+input[type="submit"] {
+  background: #0b3d91;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
+/* CARDS (JOIN PAGE FIX) */
+.cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #0b3d91;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .join-layout {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+
+  form {
+    position: sticky;
+    top: 1rem;
+  }
 }
