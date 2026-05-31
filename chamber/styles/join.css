@@ -1,14 +1,1 @@
-/* JOIN PAGE ONLY - NO GLOBAL STYLES HERE */
-
-.join-layout {
-  display: grid;
-  gap: 2rem;
-  max-width: 1100px;
-  margin: auto;
-}
-
-/* Optional: ONLY if join page needs special card spacing */
-.cards {
-  display: grid;
-  gap: 1rem;
-}
+/* Join page specific styles only */
