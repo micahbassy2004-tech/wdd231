@@ -1,0 +1,25 @@
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #F4F4F4;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+h1,
+h2 {
+    font-family: Poppins, sans-serif;
+    color: #003366;
+}
+
+section {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+pre {
+    background-color: #eee;
+    padding: 10px;
+    overflow-x: auto;
+}
