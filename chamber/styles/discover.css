@@ -1,39 +1,3 @@
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* BODY */
-body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.5;
-}
-
-/* HEADER + FOOTER */
-header, footer {
-  background: #0a3d62;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
-
-/* NAV */
-nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-/* VISIT MESSAGE */
-.visit-message {
-  padding: 1rem;
-  text-align: center;
-  background: #f1f1f1;
-  margin: 10px;
-}
-
 /* CARDS CONTAINER */
 .cards {
   display: grid;
