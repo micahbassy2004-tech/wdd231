@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Telemedicine Platforms",
+    "category": "Remote Healthcare",
+    "year": "2010",
+    "description": "Virtual medical consultations via video and mobile apps.",
+    "details": "Telemedicine platforms allow patients to consult doctors remotely using secure video conferencing systems. They improve healthcare access in rural areas, reduce hospital congestion, and support continuous monitoring of chronic diseases."
+  },
+  {
+    "name": "Electronic Health Records (EHR)",
+    "category": "Health Data Systems",
+    "year": "2005",
+    "description": "Digital storage of patient medical records.",
+    "details": "EHR systems store patient data such as history, prescriptions, lab results, and diagnoses. They improve coordination between healthcare providers and reduce medical errors."
+  },
+  {
+    "name": "AI Diagnostic Systems",
+    "category": "Medical Artificial Intelligence",
+    "year": "2018",
+    "description": "AI tools that assist in disease detection.",
+    "details": "AI diagnostic systems analyze scans, symptoms, and medical data to detect diseases like cancer and pneumonia earlier and more accurately than traditional methods."
+  },
+  {
+    "name": "Wearable Health Monitors",
+    "category": "Remote Monitoring",
+    "year": "2012",
+    "description": "Smart devices that track vital signs.",
+    "details": "Wearables like smartwatches track heart rate, oxygen levels, sleep, and activity levels to support preventive healthcare."
+  },
+  {
+    "name": "Robotic Surgery Systems",
+    "category": "Surgical Technology",
+    "year": "2000",
+    "description": "Robot-assisted precision surgeries.",
+    "details": "Robotic systems assist surgeons in performing minimally invasive procedures with higher precision and faster recovery times."
+  },
+  {
+    "name": "Remote Patient Monitoring",
+    "category": "Digital Care",
+    "year": "2015",
+    "description": "Monitoring patients from home.",
+    "details": "Medical devices collect patient data remotely, helping doctors track chronic conditions without hospital visits."
+  },
+  {
+    "name": "Medical Imaging AI",
+    "category": "Radiology AI",
+    "year": "2020",
+    "description": "AI analysis of X-rays and MRI scans.",
+    "details": "AI improves radiology accuracy by detecting abnormalities in medical images faster than manual interpretation."
+  },
+  {
+    "name": "Smart Insulin Systems",
+    "category": "Diabetes Care",
+    "year": "2014",
+    "description": "Automated insulin delivery devices.",
+    "details": "These systems adjust insulin doses automatically based on real-time glucose readings."
+  },
+  {
+    "name": "Clinical Decision Support Systems",
+    "category": "Healthcare Analytics",
+    "year": "2016",
+    "description": "Systems that assist doctors in decision-making.",
+    "details": "These systems analyze patient data and provide treatment recommendations to reduce medical errors."
+  },
+  {
+    "name": "Blockchain Health Records",
+    "category": "Data Security",
+    "year": "2021",
+    "description": "Secure decentralized medical records.",
+    "details": "Blockchain ensures patient data security, transparency, and control over medical information sharing."
+  },
+  {
+    "name": "Virtual Reality Therapy",
+    "category": "Rehabilitation Tech",
+    "year": "2017",
+    "description": "VR used in mental health and pain therapy.",
+    "details": "VR therapy is used to treat anxiety, PTSD, and pain management through immersive environments."
+  },
+  {
+    "name": "Smart Hospital IoT Systems",
+    "category": "Hospital Automation",
+    "year": "2019",
+    "description": "Connected hospital devices and sensors.",
+    "details": "IoT systems monitor equipment, patients, and hospital environments in real time to improve efficiency."
+  },
+  {
+    "name": "Genomic Medicine",
+    "category": "Genetics",
+    "year": "2018",
+    "description": "Medicine based on genetic data.",
+    "details": "Genomic medicine uses DNA analysis to personalize treatments for patients."
+  },
+  {
+    "name": "Nanomedicine",
+    "category": "Advanced Treatment",
+    "year": "2022",
+    "description": "Nanotechnology for drug delivery.",
+    "details": "Nanomedicine delivers drugs directly to affected cells, improving treatment accuracy and reducing side effects."
+  },
+  {
+    "name": "Predictive Health Analytics",
+    "category": "Data Science",
+    "year": "2020",
+    "description": "Predicting diseases using data.",
+    "details": "Uses AI and big data to predict disease risks before symptoms appear."
+  },
+  {
+    "name": "Digital Prescription Systems",
+    "category": "Pharmacy Tech",
+    "year": "2011",
+    "description": "Electronic prescription management.",
+    "details": "Doctors send prescriptions digitally to pharmacies, reducing errors and improving efficiency."
+  }
+]
